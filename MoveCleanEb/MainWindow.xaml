@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoveCleanEb"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="1024">
     <Grid>
-        
+        <DockPanel>
+
+            <Border BorderBrush="Red" BorderThickness="2"  DockPanel.Dock="Right" Width="100">
+                <StackPanel  DockPanel.Dock="Right">
+
+                </StackPanel>
+
+
+            </Border>
+
+            <ScrollViewer DockPanel.Dock="Right">
+                <Border BorderBrush="black" BorderThickness="2" HorizontalAlignment="Right">
+                    <StackPanel  VerticalAlignment="Top" Width="256" DockPanel.Dock="Right"/>
+                </Border>
+            </ScrollViewer>
+            <ScrollViewer DockPanel.Dock="Right">
+                <Border BorderBrush="black" BorderThickness="2" HorizontalAlignment="Right">
+
+                    <StackPanel  VerticalAlignment="Top" Width="256" DockPanel.Dock="Right"/>
+                </Border>
+            </ScrollViewer>
+
+
+
+            <Border BorderBrush="Green" BorderThickness="4">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                    <StackPanel MinWidth="100" DockPanel.Dock="Left">
+                        <Label Content="Label"/>
+                        <TextBox x:Name="TextScanThis" Height="23" TextWrapping="Wrap" Text="TextBox"/>
+                        <Label Content="Label" />
+                        <TextBox Height="23" TextWrapping="Wrap" Text="TextBox"/>
+                        <Rectangle Height="54" Stroke="#FFEA2323" Width="55" AllowDrop="True" DragEnter="Rectangle_DragEnter" Drop="Rectangle_Drop">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF422727"/>
+                                    <GradientStop Color="#FFF11616" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </DockPanel>
     </Grid>
 </Window>

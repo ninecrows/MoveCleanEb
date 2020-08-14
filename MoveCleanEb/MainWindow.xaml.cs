@@ -24,5 +24,15 @@ namespace MoveCleanEb
         {
             InitializeComponent();
         }
+
+        private void Rectangle_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void Rectangle_Drop(object sender, DragEventArgs e)
+        {
+
+        }
     }
 }
